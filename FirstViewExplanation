@@ -1,0 +1,16 @@
+DESIGN DOCUMENT:
+New Document
+
+_design/:
+allDocs
+
+Index name:
+testAllDocs
+
+Map Function:
+function(doc) {
+emit(doc._id, { rev: doc._rev });
+}
+
+- The function essentially runs through all documents, gets the doc and rev id of that document and stores it in memory as a lookup function later
+
