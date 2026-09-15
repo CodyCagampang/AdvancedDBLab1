@@ -1,0 +1,17 @@
+DESIGN DOCUMENT:
+New Document
+
+_design/:
+Artists
+
+Index name:
+byName
+
+Map Function:
+function(doc) {
+if ('name' in doc) {
+emit(doc.name, doc._id);
+}
+}
+
+- The function essentially runs through all documents again and looks up if there's a name variable in the document, it will take the name and id of the document.
