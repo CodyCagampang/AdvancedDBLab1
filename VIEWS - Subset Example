@@ -1,0 +1,4 @@
+curl http://localhost:5984/music/_design/Artists/_view/byAlbumName?key=\"Help!\"
+
+- The code above essentially just directs into the view (_design/Artists/_view/byAlbumName)
+- Next it uses the (?key=\"Help!\") search filter parameter to find the name "Help!" as a lookup function
