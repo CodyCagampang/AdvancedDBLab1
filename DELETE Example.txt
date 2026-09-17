@@ -1,3 +1,1 @@
-curl -i -X DELETE 
-"http://admin:mtu12345/localhost:5984/music/60b872436acb5301b1b770aa67009b49" ^
--H "If-Match: 1-967a00dff5e02add41819138abb3284d"
+curl -i -X DELETE "http://admin:mtu12345@localhost:5984/music/84c75f8b80b589b714c56551590009a3?rev=3-6063d15099b46f56e4d2c6eed4ca655a"
